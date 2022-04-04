@@ -2,37 +2,81 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-hotpink {
+  color: hotpink
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* NAV SECTION */
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin: 0px 10px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.nav a:hover {
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.selected {
+  background-color: hotpink;
+  color: whitesmoke;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login {
+  color: hotpink;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0px 10px;
+  padding: 5px 10px;
+}
+
+.reg {
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0px 10px;
+  padding: 5px 10px;
+  background-color: hotpink;
+  color: floralwhite;
+  transform: skew(-10deg);
+}
+
+.reg:hover {
+  background-color: hotpink;
+  color: antiquewhite;
+}
+
+.login:hover {
+  color: whitesmoke;
+  background-color: hotpink;
+  transform: skew(-10deg);
+}
+
+/* RESPONSIVE NAVBAR */
+.bar {
+  height: 4px;
+  width: 27px;
+  background-color: hotpink;
+  margin: 1.5px 0;
+  transition: 1s all ease-in-out;
+  cursor: pointer;
+}
+
+.toggle-nav {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  transition: all 1s ease-in-out;
+  color: #00262B;
+}
+
+/* ANNOUNCEMENT */
+.bg-hotpink {
+  background-color: hotpink;
 }
