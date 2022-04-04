@@ -1,0 +1,23 @@
+.swiper {
+    min-height: 70vh;
+    padding: 0px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+} */
+
+.mySwiper {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}

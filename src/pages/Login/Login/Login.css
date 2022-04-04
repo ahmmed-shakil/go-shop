@@ -1,0 +1,16 @@
+.login-header {
+    position: relative;
+    text-align: left;
+    display: inline-block;
+}
+
+.login-header::after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+    height: 3px;
+    background-color: brown;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}

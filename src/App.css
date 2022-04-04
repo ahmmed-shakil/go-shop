@@ -24,8 +24,8 @@
 }
 
 .selected {
-  background-color: hotpink;
-  color: whitesmoke;
+  background-color: hotpink !important;
+  color: whitesmoke !important;
 }
 
 .login {
@@ -79,4 +79,13 @@
 /* ANNOUNCEMENT */
 .bg-hotpink {
   background-color: hotpink;
+}
+
+.enroll-btn {
+  background-color: hotpink !important;
+  border: 0 !important;
+}
+
+.enroll-btn:hover {
+  background-color: black !important;
 }

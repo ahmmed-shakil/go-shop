@@ -11,11 +11,11 @@ const NavSection = () => {
                     <Col xs={8} className="nav d-flex jusitfy-content-between align-items-center">
                         <h2 className='fw-bold text-hotpink'>GOShop</h2>
                         <span className='nav-links d-md-flex d-none justify-content-center align-items-center ms-auto'>
-                            <NavLink activeClassName="selected" to="/home">Home</NavLink>
-                            <NavLink activeClassName="selected" to="/courses">Courses</NavLink>
-                            <NavLink activeClassName="selected" to="/about">About</NavLink>
-                            <NavLink activeClassName="selected" to="/contact">Contact</NavLink>
-                            <NavLink activeClassName="selected" to="/dashboard">Dashboard</NavLink>
+                            <NavLink className={(navInfo) => navInfo.isActive ? "selected" : ""} to="/home">Home</NavLink>
+                            <NavLink className={(navInfo) => navInfo.isActive ? "selected" : ""} to="/shop">Shop</NavLink>
+                            <NavLink className={(navInfo) => navInfo.isActive ? "selected" : ""} to="/about">About</NavLink>
+                            <NavLink className={(navInfo) => navInfo.isActive ? "selected" : ""} to="/contact">Contact</NavLink>
+                            <NavLink className={(navInfo) => navInfo.isActive ? "selected" : ""} to="/dashboard">Dashboard</NavLink>
                         </span>
                     </Col>
                     <Col xs={12} md={4} className="d-md-flex d-none align-items-center auth justify-content-end">
@@ -35,11 +35,11 @@ const NavSection = () => {
                     <div className='text-end p-3 text-hotpink fw-bolder fs-1' style={{ cursor: "pointer" }} onClick={() => setShow(false)}>X</div>
 
                     <div className='nav flex-column my-5 d-flex justify-content-center align-items-center ms-auto'>
-                        <NavLink activeClassName="selected" to="/home">Home</NavLink>
-                        <NavLink activeClassName="selected" to="/courses">Courses</NavLink>
-                        <NavLink activeClassName="selected" to="/about">About</NavLink>
-                        <NavLink activeClassName="selected" to="/contact">Contact</NavLink>
-                        <NavLink activeClassName="selected" to="/dashboard">Dashboard</NavLink>
+                        <NavLink className={(navInfo) => navInfo.isActive ? "selected" : ""} to="/home">Home</NavLink>
+                        <NavLink className={(navInfo) => navInfo.isActive ? "selected" : ""} to="/courses">Courses</NavLink>
+                        <NavLink className={(navInfo) => navInfo.isActive ? "selected" : ""} to="/about">About</NavLink>
+                        <NavLink className={(navInfo) => navInfo.isActive ? "selected" : ""} to="/contact">Contact</NavLink>
+                        <NavLink className={(navInfo) => navInfo.isActive ? "selected" : ""} to="/dashboard">Dashboard</NavLink>
 
                         <Link className='login fw-bold' to='/login'>Log in</Link>
                         <Link className='reg text-white mt-2' to='/register'>Register</Link>
