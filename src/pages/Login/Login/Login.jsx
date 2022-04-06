@@ -28,7 +28,7 @@ const Login = () => {
                                     Login
                                 </Button>
                             </Form>
-                            <Button className='enroll-btn w-100 mt-4'>Google Sign In</Button>
+                            <Button className='enroll-btn w-100 my-2'>Google Sign In</Button>
                             <div>
                                 <h4 className='fs-6'>Don't have an account? <NavLink className='text-dark text-decoration-underline' to={'/register'}>Create a new one</NavLink></h4>
                             </div>

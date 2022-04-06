@@ -10,7 +10,7 @@
 .nav a {
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 18px;
   margin: 0px 10px;
   display: flex;
   justify-content: center;
@@ -88,4 +88,58 @@
 
 .enroll-btn:hover {
   background-color: black !important;
+}
+
+.bg {
+  background-color: #FDF2F7;
+}
+
+.category {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+.filter {
+  cursor: pointer;
+}
+
+.a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  margin: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.a:hover {
+  background-color: black;
+  color: white;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.p-hover {
+  background-color: hotpink;
+  color: white !important;
 }
